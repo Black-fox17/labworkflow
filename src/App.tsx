@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Beaker, Droplets, Shield, Microscope, ChevronDown, ChevronUp, ArrowRight, FlaskRound as Flask, TestTube, Goal as Vial, Syringe } from 'lucide-react';
-
+import TamacWorkFlow from './Tarmac.tsx';
 type Section = {
   id: string;
   title: string;
@@ -86,11 +86,11 @@ function App() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span>EDTA Bottles (2x 4mls)</span>
+                  <span>EDTA For gDNA Extraction (2x 4mls)</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span>Plain Bottle (4mls)</span>
+                  <span>Plain Bottle is Pharmacokinetics (4mls)</span>
                 </li>
               </ul>
             </div>
@@ -103,11 +103,11 @@ function App() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
-                  <span>2 strips (Paxgene)</span>
+                  <span>Tissue must not less than 2 strips of(Paxgene) collected into tissue container</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
-                  <span>FFPE Block</span>
+                  <span>Tissue in 10%NBF for diagnostic block</span>
                 </li>
               </ul>
             </div>
@@ -154,13 +154,94 @@ function App() {
               </div>
             </div>
           </div>
-
           <div className="bg-blue-50 p-4 rounded-lg">
             <p className="text-blue-800 font-medium">Note: Samples for pharmacokinetics should be taken at every visit</p>
           </div>
         </div>
       )
     },
+    {
+          id: 'Tamac',
+          title: 'Tamac Sample',
+          icon: <Beaker className="w-6 h-6" />,
+          content: (
+            <div className="space-y-6">
+              <div className="mb-6">
+              <img
+                src="/sample.webp"
+                alt="Blood Sample Collection"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+            </div>
+              <div className="bg-white p-4 rounded-lg border border-gray-200">
+                <h3 className="font-semibold text-lg mb-3">Blood Sample Types</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <div className="flex items-center space-x-3 mb-3">
+                      <TestTube className="w-6 h-6 text-blue-600" />
+                      <h4 className="font-medium">DNA Extraction</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li>• EDTA Bottles: 4mL (2 bottles)</li>
+                    </ul>
+                  </div>
+    
+                  <div className="bg-purple-50 p-4 rounded-lg">
+                    <div className="flex items-center space-x-3 mb-3">
+                      <Syringe className="w-6 h-6 text-purple-600" />
+                      <h4 className="font-medium">Circulating DNA</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li>• EDTA Bottles: 4mL (2 bottles)</li>
+                      <li>• Extract plasma</li>
+                      <li>• Store at -80°C</li>
+                    </ul>
+                  </div>
+    
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <div className="flex items-center space-x-3 mb-3">
+                      <Flask className="w-6 h-6 text-green-600" />
+                      <h4 className="font-medium">Pharmacokinetics</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li>• Plain Bottle: 4mL</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+              <div className="bg-white p-4 rounded-lg border border-gray-200">
+                <h3 className="font-semibold text-lg mb-3">Tissue Collection</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-purple-50 p-4 rounded-lg">
+                    <div className="flex items-center space-x-3 mb-3">
+                      <Vial className="w-6 h-6 text-purple-600" />
+                      <h4 className="font-medium">Biopsy</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li>• Minimum 2 strips for ultrasound-guided biopsy</li>
+                      <li>• Collected in Paxgene container</li>
+                    </ul>
+                  </div>
+    
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <div className="flex items-center space-x-3 mb-3">
+                      <Microscope className="w-6 h-6 text-gray-600" />
+                      <h4 className="font-medium">Diagnostic Tissue</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li>• Prepare FFPE (Formalin-Fixed Paraffin-Embedded) block</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+    
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <p className="text-blue-800 font-medium">Note: Samples for pharmacokinetics should be taken at every visit</p>
+              </div>
+            </div>
+          )
+        },
     {
       id: 'collection',
       title: 'Collection & Transportation',
