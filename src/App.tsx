@@ -20,7 +20,7 @@ function App() {
         <div className="space-y-4">
           <div className="mb-6">
             <img
-              src="lab safety.webp"
+              src="/lab safety.webp"
               alt="Laboratory Safety Equipment"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
@@ -70,7 +70,7 @@ function App() {
         <div className="space-y-6">
           <div className="mb-6">
             <img
-              src="sample.webp"
+              src="/sample.webp"
               alt="Blood Sample Collection"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
@@ -169,7 +169,7 @@ function App() {
         <div className="space-y-4">
           <div className="mb-6">
             <img
-              src="transport.jpg"
+              src="/transport.jpg"
               alt="Sample Transportation"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
@@ -209,7 +209,7 @@ function App() {
         <div className="space-y-6">
           <div className="mb-6">
             <img
-              src="process.webp"
+              src="/process.webp"
               alt="Laboratory Processing"
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
@@ -268,7 +268,7 @@ function App() {
             
             <div className="flex flex-col items-center">
               <img
-                src="sample.webp"
+                src="/sample.webp"
                 alt="Sample Collection"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
@@ -280,7 +280,7 @@ function App() {
             
             <div className="flex flex-col items-center">
               <img
-                src="transport.jpg"
+                src="/transport.jpg"
                 alt="Transportation"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
@@ -292,7 +292,7 @@ function App() {
             
             <div className="flex flex-col items-center">
               <img
-                src="process.webp"
+                src="/process.webp"
                 alt="Processing"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
