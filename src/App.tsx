@@ -256,7 +256,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="flex flex-col items-center">
               <img
-                src="lab safety.webp"
+                src="/lab safety.webp"
                 alt="Safety Protocols"
                 className="w-full h-40 object-cover rounded-lg mb-4"
               />
